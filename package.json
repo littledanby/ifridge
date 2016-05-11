@@ -1,0 +1,38 @@
+{
+  "5min": {
+    "F1": [
+      {
+        "Timestamp": 38113,
+        "humidity of BME280 (%rh)": 42,
+        "light of BME280 (lux)": 1540,
+        "pressure of BME280 (pa)": 100416,
+        "temperature of BME280 (mDeg)": 26780
+      },
+      {
+        "Timestamp": 41043,
+        "humidity of BME280 (%rh)": 41,
+        "light of BME280 (lux)": 1540,
+        "pressure of BME280 (pa)": 100409,
+        "temperature of BME280 (mDeg)": 26800
+      }
+    ],
+    "F2": [
+      {
+        "Timestamp": 38113,
+        "humidity of BME280 (%rh)": 42,
+        "light of BME280 (lux)": 1540,
+        "pressure of BME280 (pa)": 100416,
+        "temperature of BME280 (mDeg)": 26780
+      },
+      {
+        "Timestamp": 41043,
+        "humidity of BME280 (%rh)": 41,
+        "light of BME280 (lux)": 1540,
+        "pressure of BME280 (pa)": 100409,
+        "temperature of BME280 (mDeg)": 26800
+      }
+    ]
+  }
+
+
+}
