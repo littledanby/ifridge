@@ -50,10 +50,10 @@
                             <li><a href="#blog">Appendix</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
-                        <ul class="member-actions">
-                            <li><a href="#" class="login">Log in</a></li>
-                            <li><a href="#" class="btn-white btn-small">Sign up</a></li>
-                        </ul>
+                        <!--<ul class="member-actions">-->
+                            <!--<li><a href="#" class="login">Log in</a></li>-->
+                            <!--<li><a href="#" class="btn-white btn-small">Sign up</a></li>-->
+                        <!--</ul>-->
                     </nav>
                 </div>
                 <div class="navicon">
@@ -86,9 +86,9 @@
                 </div>
                 <div class="intro-content">
                     <h5>data collection</h5>
-                    <p>Here we need to add something!!!!Easily customise Sedna to suit your start up, portfolio or
-                        product. Take advantage of the layered
-                        Sketch file and bring your product to life.</p>
+                    <p>We gather data from two fridges which would show the working condition and qualification of every
+                        of them. We simulated a small situation of the fridge, open the door for several minutes,
+                        and then gather the data. For this lab, we mainly focus on temperature, humidity and light. </p>
                 </div>
             </div>
             <div class="col-md-4 intro-feature">
@@ -97,8 +97,9 @@
                 </div>
                 <div class="intro-content">
                     <h5>data analysis</h5>
-                    <p>Designed with modern trends and techniques in mind, Sedna will help your product stand out in an
-                        already saturated market.</p>
+                    <p>Based on the timestamp of opening door, closing door, humidity peak, humidity cover,
+                        temperature peak, temperature cover, we can figure out the property of dehumidification and
+                        refrigeration of fridge. </p>
                 </div>
             </div>
             <div class="col-md-4 intro-feature">
@@ -107,8 +108,9 @@
                 </div>
                 <div class="intro-content last">
                     <h5>data visualization</h5>
-                    <p>Built using the latest web technologies like html5, css3, and jQuery, rest assured Sedna will
-                        look smashing on every device under the sun.</p>
+                    <p>We translate our data from .csv file to jason format. Node.js grabs data from AWS DynamoDB using
+                        the AWS SDK for JavaScript in Node.js to perform DynamoDB operations. Then we use Chart.js - a
+                        open source HTML5 charts - to draw these reactive and responsive charts.</p>
                 </div>
             </div>
         </div>
@@ -169,9 +171,10 @@
         <div class="row">
             <div class="col-md-5">
                 <div class="feature-list">
-                    <h3>Comparison of Fridges</h3>
-                    <p>We have 5 minutes, 10 minutes and 15 minutes of door opening. </p>
-                    <p>We compare the temperature changes, humidity changes.
+                    <h3>Dynamic Data of Your Fridge</h3>
+                    <p>The chart on the right shows the current temperature and humidity change in your refrigerator.
+                    You have only to put your XDK into the fridge.</p>
+                    <p>The green line is temperature
                     </p>
                     <p></p>
                     <p></p>
@@ -212,11 +215,21 @@
                 </div>
             </td>
             <td style="width: 10%; text-align: center; vertical-align: middle;">
+                <p></p>
+                <p></p>
+                <p></p>
                 <div class="mybutton" ng-repeat="op in minutes">
                     <button class="btn btn-default" ng-disabled="my_select==op"
                             ng-click="refresh_figure(op)">{{op}}
                     </button>
                 </div>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <div class="logo-placeholder floating-logo"><img src="img/if2.png" alt="iFridge Logo"></div>
 
             </td>
             <td style="width: 40%">
@@ -242,18 +255,18 @@
     </div>
 
 </section>
-<section class="hero-strip section-padding">
-    <div class="container">
-        <div class="col-md-12 text-center">
-            <h2>
-                Customise Sedna with the included <span class="sketch">Sketch <i class="version">3</i></span> file
-            </h2>
-            <p>Change/swap/edit every aspect of Sedna before you hit development with the included Sketch file.</p>
-            <a href="#" class="btn btn-ghost btn-accent btn-large">Download now!</a>
-            <div class="logo-placeholder floating-logo"><img src="img/if2.png" alt="iFridge Logo"></div>
-        </div>
-    </div>
-</section>
+<!--<section class="hero-strip section-padding">-->
+    <!--<div class="container">-->
+        <!--<div class="col-md-12 text-center">-->
+            <!--<h2>-->
+                <!--Customise Sedna with the included <span class="sketch">Sketch <i class="version">3</i></span> file-->
+            <!--</h2>-->
+            <!--<p>Change/swap/edit every aspect of Sedna before you hit development with the included Sketch file.</p>-->
+            <!--<a href="#" class="btn btn-ghost btn-accent btn-large">Download now!</a>-->
+            <!--<div class="logo-placeholder floating-logo"><img src="img/if2.png" alt="iFridge Logo"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 <section class="blog-intro section-padding" id="blog">
     <div class="container">
         <div class="row">
@@ -263,18 +276,21 @@
         </div>
         <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-                <h5>PLATFORM</h5>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.</p>
+                <h5>PLATFORM & SERVICE</h5>
+                <p>1. XDK workbench: An IDE developed by Bosch for the device, currently only support the windows
+                    operating system. It includes a direct interface to the XDK community and the XDK API documentation.</p>
+                <p>2. AWS DynamoDB: A full managed NoSQL cloud database service for almost-non latency applications. It
+                supports both document and key-value store models.</p>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                 <h5>TOOLS</h5>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.</p>
+                <p>Python: A dynamic programming language. Used for uploading data to AWS DynamoDB.</p>
+                <p> HTML/CSS: Used to manage layout and add style to components. <br />
+                    JavaScript: Used to add behaviour to web pages <br />
+                    Node.js: An open-source, cross platform runtime environment for developing server-side Web applications. <br />
+                    Chart.js: a open source HTML5 charts - to draw reactive and responsive charts.
+                </p>
+
             </div>
         </div>
     </div>
@@ -354,7 +370,7 @@
                     <ul class="slides">
                         <li>
                             <div class="avatar"><img src="img/xiaowen.jpg" alt="Xiaowen Li"></div>
-                            <h2>Dynamic data processing. UI design.</h2>
+                            <h2>Dynamic data processing. Web design.</h2>
                             <p class="author"> Xiaowen Li (xl2519@columbia.edu) </p>
                         </li>
                         <li>
